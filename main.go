@@ -40,7 +40,7 @@ func addGaugeVecMetric(name string, help string, labels []string) {
 func initMetrics() {
 
 	addGaugeMetric("transferStatus", "Weather or not it is currently transferring. 1 = Transferring, 0 = Not Transferring")
-	addGaugeVecMetric("remainingFilesNum", "Number of remaining files which needs to be backed up", []string{"volumeGuid"})
+	addGaugeVecMetric("remainingFilesNum", "Number of remaining files which need to be backed up", []string{"volumeGuid"})
 	addGaugeVecMetric("totalFilesNum", "Number of total files marked for backup", []string{"volumeGuid"})
 	addGaugeVecMetric("remainingBytes", "Number of remaining bytes which need to be backed up", []string{"volumeGuid"})
 	addGaugeVecMetric("totalBytes", "Number of total bytes marked for backup", []string{"volumeGuid"})
